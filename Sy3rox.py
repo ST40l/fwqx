@@ -172,7 +172,7 @@ class VirusScanner(tk.Tk):
         messagebox.showinfo("Notification", message)
 
     def load_proxy_list(self):
-        with open("C:\\Users\\Xyeta\\Desktop\\files\\proxy.txt", "r") as file:
+        with open("proxy.txt", "r") as file:
             self.proxy_list = [line.strip() for line in file.readlines()]
 
     def find_emails_ping_and_scan(self):
